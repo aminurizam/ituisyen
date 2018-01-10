@@ -24,7 +24,7 @@
                       <table class="table">
                         <thead>
                           <tr>
-
+                            <th>Gambar</th>
                             <th>Nama</th>
                             <th>Email</th>
                             <th>Peringkat</th>
@@ -41,7 +41,13 @@
                             
                         <tr>
                             
-
+                            
+                           {{--  @if($datum->gambar == null)
+                                <td>Tiada gambar</td>
+                            @else
+                                <td><img style="height: 250px; width: 270px" src="{{$datum->gambar}}" alt=""></td>    
+                            @endif --}}
+                            
                             
                             <td>{{ $datum->name }}</td>
                           

@@ -28,7 +28,14 @@ Route::get('/registerTP', 'DumpController@regTP');
 Route::group(['middleware' => ['auth']], function() {
 
 	Route::get('/profile', 'ProfileController@index')->name('profile');
+	Route::get('/profile/edit/{id}', 'ProfileController@edit');
+	Route::patch('/profile/update/{id}', 'ProfileController@update');
 
 });
 
 Route::get('/home/{id}', 'DumpController@tuisyenDetail');
+
+
+Route::get('test', function() {
+	return view('test');
+});

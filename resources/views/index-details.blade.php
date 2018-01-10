@@ -8,6 +8,12 @@
                 <div class="panel-heading">Perincian Tutoran</div>
 
                 <div class="panel-body">
+                    @if($details->gambar == null)
+                    <p><b>Tiada Gambar</b></p>
+                    @else
+                    <p><img style="height: 300px; width: 330px" src="{{ $details->gambar }}" alt=""></p>
+                    @endif
+                    
                     <p>Nama: {{$details->name}}</p>
                     <p>Email: {{$details->email}}</p>
                     <p>No. Telefon: {{$details->telefon}}</p>

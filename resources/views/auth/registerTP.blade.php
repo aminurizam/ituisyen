@@ -117,9 +117,8 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label for="gambar" class="col-md-4 control-label">Gambar</label>
-                            {{-- <input type="file" name="image" /> --}}
                             <div class="col-md-6">
                                 <input id="gambar" type="file"  name="gambar" value="{{ old('gambar') }}" style="padding-top: 7px">
 
@@ -129,7 +128,7 @@
                                     </span>
                                 @endif
                             </div>
-                        </div>
+                        </div> --}}
 
                         <input type="hidden" value="tutorPersendirian" name="kategori">
 

@@ -75,6 +75,7 @@
                             </div>
                         </div>
 
+                        
                         <div class="form-group{{ $errors->has('peringkat') ? ' has-error' : '' }}">
                             <label for="peringkat" class="col-md-4 control-label">Peringkat</label>
 
@@ -87,6 +88,19 @@
                                     </span>
                                 @endif
                             </div>
+
+                            {{-- <div class="col-md-6"> 
+                                <label class="checkbox-inline"><input id="peringkat" type="checkbox" name="peringkat" value="UPSR">UPSR</label>
+                                <label class="checkbox-inline"><input id="peringkat" type="checkbox" name="peringkat" value="PMR">PMR</label>
+                                <label class="checkbox-inline"><input id="peringkat" type="checkbox" name="peringkat" value="SPM">SPM</label>
+                                <label class="checkbox-inline"><input id="peringkat" type="checkbox" name="peringkat" value="STPM">STPM</label>
+
+                                @if ($errors->has('peringkat'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('peringkat') }}</strong>
+                                    </span>
+                                @endif
+                            </div> --}}
                         </div>
 
                         <div class="form-group{{ $errors->has('subjek') ? ' has-error' : '' }}">
@@ -117,9 +131,8 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label for="gambar" class="col-md-4 control-label">Gambar</label>
-                            {{-- <input type="file" name="image" /> --}}
                             <div class="col-md-6">
                                 <input id="gambar" type="file"  name="gambar" value="{{ old('gambar') }}" style="padding-top: 7px">
 
@@ -129,7 +142,7 @@
                                     </span>
                                 @endif
                             </div>
-                        </div>
+                        </div> --}}
 
                         <input type="hidden" value="pusatTuisyen" name="kategori">
 
@@ -142,6 +155,7 @@
                                 </button>
                             </div>
                         </div>
+
                     </form>
                 </div>
             </div>
